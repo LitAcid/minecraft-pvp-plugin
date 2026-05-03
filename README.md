@@ -1,6 +1,4 @@
-<meta name="google-site-verification" content="RFyc4zLcTLYekzzHzLD6iWSt-JUtjbcFfZmwDP2DGmU" />
-
-**PVP Core | All-in-One PvP Plugin (Duels, FFA, Queue)**
+# PVP Core | All-in-One PvP Plugin (Duels, FFA, Queue)
 
 <p align="centre">
   <a href="https://pariah3.gumroad.com/l/zuadnl">
