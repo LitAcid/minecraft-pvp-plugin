@@ -5,7 +5,7 @@
 <title>PVP Core | Minecraft PvP Plugin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Best Minecraft PvP plugin with duels, FFA, queue, kit editor and arena system. Perfect for PvP servers.">
+<meta name="description" content="Best Minecraft PvP plugin with duels, FFA, queue, kits and arena system.Best for Pvp servers">
 
 <style>
 body {
@@ -26,20 +26,23 @@ body {
   align-items: center;
   background: rgba(10,15,26,0.85);
   border-bottom: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
 }
 
+/* LOGO */
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-weight: 600;
 }
 
-.logo img {
-  height: 28px;
+.logo video {
+  height: 32px;
+  border-radius: 4px;
 }
 
-/* CTA BUTTON */
+/* BUTTON */
 .btn {
   background: #22c55e;
   color: black;
@@ -74,7 +77,7 @@ body {
   opacity: 0.7;
 }
 
-/* CENTERED CTA UNDER HERO */
+/* HERO CTA */
 .hero-cta {
   margin-top: 25px;
 }
@@ -116,7 +119,7 @@ body {
   font-size: 14px;
 }
 
-/* FINAL CTA */
+/* CTA */
 .cta {
   text-align: center;
   padding: 60px 20px;
@@ -137,15 +140,19 @@ body {
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
   <div class="logo">
-    <img src="https://raw.githubusercontent.com/LitAcid/minecraft-pvp-plugin/main/PvP%20Core.png">
+    <video autoplay muted loop playsinline>
+      <source src="https://www.image2url.com/r2/default/videos/1777892166483-adbadf62-0564-490f-a5f1-99ca912dc1a1.mp4" type="video/mp4">
+    </video>
     PVP Core
   </div>
 
   <a href="https://pariah3.gumroad.com/l/zuadnl" class="btn">DOWNLOAD</a>
 </div>
 
+<!-- HERO -->
 <section class="hero">
   <img src="https://raw.githubusercontent.com/LitAcid/minecraft-pvp-plugin/main/thumbnail-pvpcore.png">
 
@@ -159,6 +166,7 @@ body {
   </div>
 </section>
 
+<!-- FEATURES -->
 <section class="section">
   <h2>Features</h2>
 
@@ -174,10 +182,16 @@ body {
   </div>
 </section>
 
+<!-- CTA -->
 <section class="cta">
   <h2>Start building your PvP server</h2>
   <a href="https://pariah3.gumroad.com/l/zuadnl">DOWNLOAD ($2)</a>
 </section>
+
+<!-- SEO KEYWORDS (hidden) -->
+<div style="display:none;">
+pvp plugin minecraft, ffa plugin minecraft, duel plugin minecraft, queue plugin minecraft, pvp practice plugin
+</div>
 
 </body>
 </html>
