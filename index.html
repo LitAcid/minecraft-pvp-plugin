@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>PVP Core | All-in-One Minecraft PvP Plugin</title>
+<title>PVP Core | Minecraft PvP Plugin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="All-in-one Minecraft PvP plugin with duels, FFA, queue, kits, arenas and stats.">
+<meta name="description" content="All-in-one Minecraft PvP plugin with duels, FFA, queue, kits and arenas.">
 
 <style>
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #0b0f1a;
+  background: #0a0f1a;
   color: #e5e7eb;
 }
 
@@ -20,187 +20,144 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 14px 40px;
+  padding: 12px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(11,15,26,0.8);
-  backdrop-filter: blur(10px);
+  background: rgba(10,15,26,0.85);
   border-bottom: 1px solid rgba(255,255,255,0.05);
-  z-index: 1000;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-weight: 600;
 }
 
 .logo img {
-  height: 32px;
+  height: 28px;
 }
 
-/* CTA BUTTON */
-.cta-btn {
+/* BUTTON */
+.btn {
   background: #22c55e;
   color: black;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
   text-decoration: none;
-  box-shadow: 0 4px 20px rgba(34,197,94,0.3);
-  transition: 0.2s;
-}
-
-.cta-btn:hover {
-  transform: translateY(-1px);
+  font-weight: 600;
 }
 
 /* HERO */
 .hero {
-  padding: 140px 20px 80px;
+  padding: 120px 20px 60px;
   text-align: center;
 }
 
 .hero img {
-  max-width: 720px;
+  max-width: 680px;
   width: 90%;
-  border-radius: 12px;
-  margin-bottom: 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
 }
 
 .hero h1 {
-  font-size: 44px;
-  margin-bottom: 12px;
+  font-size: 36px;
+  margin-bottom: 10px;
   color: white;
 }
 
 .hero p {
-  max-width: 600px;
+  max-width: 520px;
   margin: auto;
-  opacity: 0.75;
-  font-size: 17px;
+  opacity: 0.7;
 }
 
 /* SECTION */
 .section {
-  padding: 70px 20px;
-  max-width: 1100px;
+  padding: 50px 20px;
+  max-width: 900px;
   margin: auto;
 }
 
 .section h2 {
-  font-size: 28px;
-  margin-bottom: 25px;
+  font-size: 22px;
+  margin-bottom: 20px;
   color: white;
 }
 
 /* FEATURES */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
 }
 
 .card {
-  background: #111827;
-  padding: 18px;
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.05);
+  background: #0f172a;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
-.card strong {
-  display: block;
-  margin-bottom: 6px;
-  color: white;
-}
-
-/* FINAL CTA */
-.final {
+/* CTA */
+.cta {
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
-.big-btn {
+.cta a {
+  display: inline-block;
+  margin-top: 15px;
   background: #22c55e;
   color: black;
-  padding: 14px 28px;
-  font-size: 18px;
-  border-radius: 10px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 700;
-  display: inline-block;
-  margin-top: 20px;
-  box-shadow: 0 6px 25px rgba(34,197,94,0.35);
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
   <div class="logo">
     <img src="https://raw.githubusercontent.com/LitAcid/minecraft-pvp-plugin/main/PvP%20Core.png">
     PVP Core
   </div>
 
-  <a href="https://pariah3.gumroad.com/l/zuadnl" class="cta-btn">
-    Buy for $2
-  </a>
+  <a href="https://pariah3.gumroad.com/l/zuadnl" class="btn">Buy</a>
 </div>
 
-<!-- HERO -->
 <section class="hero">
   <img src="https://raw.githubusercontent.com/LitAcid/minecraft-pvp-plugin/main/thumbnail-pvpcore.png">
 
-  <h1>Everything Your PvP Server Needs</h1>
+  <h1>One Plugin for Your PvP Server</h1>
   <p>
-    Duels, FFA, queue system, kit editor, arenas and stats — all in one clean,
-    optimized plugin. No conflicts. No setup headaches.
+    Duels, FFA, queue, kits and arenas — everything in one clean, optimized system.
   </p>
 </section>
 
-<!-- FEATURES -->
 <section class="section">
-  <h2>Core Features</h2>
+  <h2>Features</h2>
 
   <div class="grid">
-    <div class="card"><strong>Duels System</strong> Fast 1v1 matchmaking with smooth gameplay</div>
-    <div class="card"><strong>FFA Modes</strong> Multiple gamemodes with full control</div>
-    <div class="card"><strong>Queue System</strong> GUI-based matchmaking experience</div>
-    <div class="card"><strong>Kit Editor</strong> Easy player customization</div>
-    <div class="card"><strong>Arena System</strong> Create, manage & regenerate arenas</div>
-    <div class="card"><strong>Stats Tracking</strong> Competitive player data</div>
-    <div class="card"><strong>/guide Setup</strong> Built-in setup instructions</div>
-    <div class="card"><strong>Optimized</strong> Designed for performance & stability</div>
+    <div class="card">Duels system</div>
+    <div class="card">FFA gamemodes</div>
+    <div class="card">Queue with GUI</div>
+    <div class="card">Kit editor</div>
+    <div class="card">Arena management</div>
+    <div class="card">Stats tracking</div>
+    <div class="card">/guide setup</div>
+    <div class="card">Optimized performance</div>
   </div>
 </section>
 
-<!-- WHY -->
-<section class="section">
-  <h2>Why PVP Core?</h2>
-
-  <div class="grid">
-    <div class="card">❌ Multiple plugins → conflicts & bugs</div>
-    <div class="card">❌ Hard setup → wastes time</div>
-    <div class="card">❌ Poor performance</div>
-
-    <div class="card">✅ One plugin → everything integrated</div>
-    <div class="card">✅ Clean setup with /guide</div>
-    <div class="card">✅ Built for competitive PvP</div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="final">
-  <h2>Stop searching. Start building.</h2>
-  <p>Everything you need is already here.</p>
-
-  <a href="https://pariah3.gumroad.com/l/zuadnl" class="big-btn">
-    Get PVP Core for $2
-  </a>
+<section class="cta">
+  <h2>Start building your PvP server</h2>
+  <a href="https://pariah3.gumroad.com/l/zuadnl">Get PVP Core ($2)</a>
 </section>
 
 </body>
